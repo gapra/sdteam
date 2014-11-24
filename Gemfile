@@ -38,7 +38,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'font-awesome-sass'
+gem 'font-awesome-rails', '~> 4.2.0.0'
 
 group :development do 
   gem 'sqlite3'
