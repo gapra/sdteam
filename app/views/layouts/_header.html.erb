@@ -1,1 +1,18 @@
-Header
+<header class="header">
+    <nav class="navi-bar header-nav">
+        <div class="container">
+            <%= link_to('SDTeam', '#', class: "navi-logo") %>
+            <ul class="navi navi-menu for-main-menu">
+                <li><%= link_to(root_path) do %><i class="fa fa-home"></i><% end %></li>
+                <li><%= link_to('who we are', '#') %></li>
+                <li><%= link_to('what we do', '#') %></li>
+                <li><%= link_to('get in touch', '#') %></li>
+            </ul>
+            <ul class="navi navi-menu for-media right">
+                <li><%= link_to('#', target: '_blank') do %><i class="fa fa-git"></i><% end %></li>
+                <li><%= link_to('#', target: '_blank') do %><i class="fa fa-bitbucket"></i><% end %></li>
+                <li><%= link_to('http://www.softwareseni.com', target: '_blank') do %><i class="fa fa-globe"></i><% end %></li>
+            </ul>
+        </div>
+    </nav>
+</header>

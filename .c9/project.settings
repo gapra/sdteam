@@ -16,8 +16,8 @@
     },
     "ace": {
         "@newLineMode": "unix",
-        "@tabSize": "4",
-        "@useSoftTabs": "true",
+        "@tabSize": 2,
+        "@useSoftTabs": true,
         "@guessTabSize": "true"
     },
     "find.nak": {
@@ -31,7 +31,7 @@
     },
     "build": {
         "@path": "/.c9/builders",
-        "@saveall": "true",
+        "@saveall": true,
         "@builder": "auto"
     },
     "share": {

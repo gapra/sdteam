@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
+a {
+  color: $blue;
+  &:hover {
+    color: $dblue;
+  }
+}
