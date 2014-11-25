@@ -1,2 +1,47 @@
-<h1><i class="fa fa-home"></i> Homepage#index</h1>
-<p>Find me in app/views/homepage/index.html.erb</p>
+<section class="homepage section">
+    <div id="homeslider" class="carousel slide home-slider" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#homeslider" data-slide-to="0" class="active"></li>
+            <li data-target="#homeslider" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="home-slide">
+            <div class="item active">
+                <div class="fixed-image-slider" style="background-image:url(assets/desktop-1.jpg);"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, beatae, quo officiis distinctio obcaecati animi</h4>
+                        <%= link_to('who we are', '#', class: "gp-btn caption-btn") %>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fixed-image-slider" style="background-image:url(assets/desktop-2.jpg);"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, beatae, quo officiis distinctio obcaecati animi</h4>
+                        <%= link_to('our works', '#', class: "gp-btn caption-btn") %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about section">
+        <div class="container">
+            <div class="gp-r">
+                <div class="gp-c4-mc">
+                    <h1 class="title">who we are</h1>
+                </div>
+                <div class="gp-c2">
+                    
+                </div>
+                <div class="gp-c4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, tenetur, deserunt, iusto, quasi veritatis saepe eligendi officiis inventore illo dignissimos aliquid quas expedita similique. Rem, culpa libero et illum sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, tenetur, deserunt, iusto, quasi veritatis saepe eligendi officiis inventore illo dignissimos aliquid quas expedita similique. Rem, culpa libero et illum sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, fuga reprehenderit amet neque nulla vel impedit a. Sint, aspernatur libero rem dicta facilis autem voluptates vitae delectus totam reprehenderit minus?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

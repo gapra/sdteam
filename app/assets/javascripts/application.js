@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function(){
+  var wh = $(window).height();
+  var headerH = $('.header').height() - 1;
+  var slideH = wh - headerH;
+  $(window).on('ready load resize', function(){
+    $('.home-slider .fixed-image-slider').css('height', wh);
+  });
+});

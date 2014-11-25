@@ -3,20 +3,82 @@
 
 /* HEADER */
 .header {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  width: 100%;
   .header-nav {
     background: $w;
-    border-bottom: 1px solid $grey;
+    .navi-logo {
+      padding: 15px;
+      height: auto;
+      background: $lgrey;
+    }
+    img {
+      height: 30px;
+    }
     .navi-menu {
       li {
         a {
-          padding-top: 16px;
-          padding-bottom: 16px;
-          color: #444;
+          padding: 20px 15px;
+          color: $dgreen;
           &:hover {
-            color: $blue;
+            color: $green;
           }
         }
       }
     }
+  }
+}
+
+/* Slider */
+.home-slider {
+  .fixed-image-slider {
+    background-position: 50% 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .carousel-caption {
+    width: 40%;
+    top: 45%;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    text-align: left;
+    h2, h4 {
+      margin-top: 0;
+      font-family: "Open Sans", Arial, sans-serif
+    }
+    h4 {
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+    .caption-btn {
+      border: 1px solid $w;
+      padding: 10px 20px;
+      color: #fff;
+      &:hover {
+        background: $w;
+        color: $green;
+        text-shadow: none;
+      }
+    }
+  }
+  .carousel-indicators {
+    li {
+      border: 1px solid $green;
+    }
+  }
+}
+
+.section {
+  h1.title {
+    color: $green;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 3.4em;
+    font-weight: 300;
   }
 }

@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="navi-bar header-nav">
         <div class="container">
-            <%= link_to('SDTeam', '#', class: "navi-logo") %>
+            <%= link_to(root_path, class: "navi-logo") do %><%= image_tag("sdteam-logo.png") %><% end %>
             <ul class="navi navi-menu for-main-menu">
                 <li><%= link_to(root_path) do %><i class="fa fa-home"></i><% end %></li>
                 <li><%= link_to('who we are', '#') %></li>
